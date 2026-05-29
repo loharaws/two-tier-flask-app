@@ -25,7 +25,7 @@ services:
     restart: always
 
     environment:
-       MYSQL_USER: admin
+      MYSQL_USER: admin
       MYSQL_PASSWORD: admin
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: myDb
