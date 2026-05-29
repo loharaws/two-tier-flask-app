@@ -10,10 +10,10 @@ services:
       - "5000:5000"
 
     environment:
-      MYSQL_HOST: mysql-db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: rootpassword
-      MYSQL_DATABASE: flaskdb
+      MYSQL_HOST: mysql
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: myDb
 
     depends_on:
       - mysql-db
@@ -25,8 +25,8 @@ services:
     restart: always
 
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: flaskdb
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: myDb
 
     ports:
       - "3306:3306"
